@@ -1,0 +1,17 @@
+{
+    "name": "oxi.rene-so36",
+    "description": "description of oxi",
+    "architecture": "all",
+    "title": "oxi",
+    "hooks": {
+        "oxi": {
+            "apparmor": "oxi.apparmor",
+            "desktop":  "oxi.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "rene paulokat <rene@so36.net>",
+    "framework" : "ubuntu-sdk-14.10-qml"
+}
+
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=oxi
+Exec=qmlscene $@ Main.qml
+Icon=oxi.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
