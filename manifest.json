@@ -6,12 +6,10 @@
     "hooks": {
         "oxi": {
             "apparmor": "oxi.apparmor",
-            "desktop":  "oxi.desktop"
+            "desktop": "oxi.desktop"
         }
     },
-    "version": "0.1",
+    "version": "0.1.1",
     "maintainer": "rene paulokat <rene@so36.net>",
-    "framework" : "ubuntu-sdk-14.10-qml"
+    "framework": "ubuntu-sdk-14.10-qml"
 }
-
-

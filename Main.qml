@@ -54,11 +54,19 @@ MainView {
             width: parent.width
             text: "Compute the answer..."
             color: UbuntuColors.orange
-
-
             onClicked: {
               stack.push(answerPage)
             }
+          }
+          Button {
+              objectName: "button"
+              width: parent.width
+              text: "see Results"
+              color: UbuntuColors.green
+              onClicked: {
+                  stack.push(resultPage)
+                  //stack.push(result)
+              }
           }
         }
       }
@@ -84,7 +92,7 @@ MainView {
             font.bold: true;
             text: "OXI";
             horizontalAlignment: Text.AlignHCenter;
-            height: parent.height / 2
+            height: parent.height / 3
           }
 
           Label {
@@ -99,6 +107,38 @@ MainView {
           }
         }
       }
+      Page {
+          id: resultPage
+          title: "OXI"
+          visible: false
+          Column {
+              id: row1
+              height: txt.height
+              spacing: units.gu(1)
+              anchors {
+                  margins: units.gu(2)
+                  fill: parent
+              }
+
+              Text {
+                color: UbuntuColors.orange
+                font.pointSize: 80;
+                font.bold: true;
+                text: "61,3%";
+                horizontalAlignment: Text.AlignHCenter;
+                //height: parent.height / 4
+              }
+
+              Text {
+                  id: txt
+                  color: UbuntuColors.darkAubergine
+                  text: "The OXI will remain. \nIt must and will be generalized - \nin the rest of Europe and beyond.\n And the semantics of the NO is \n the state of the struggle: \nThe new is not yet known.\nBut the fear is vanquished.\nAs it is, it must not remain."
+                  horizontalAlignment: Text.AlignHCenter;
+              }
+
+              Image { id: image; fillMode: Image.TileHorizontally; source: "nelke.png" }
+          }
+       }
     }
 }
 
